@@ -4,11 +4,15 @@ namespace EnventoryManagement
 {
     class Program
     {
-        const string INVENTORY_JSON= @"C:\Users\dnyan\dnyana\EnventoryManagement\EnventoryManagementt\EnventoryManagement.json";
+        const string INVENTORY_JSON= @"C:\Users\dnyan\dnyana\OOPs\EnventoryManagement\EnventoryManagementt\EnventoryManagement.json";
         static void Main(string[] args)
         {
-            EnventoryMain enventoryMain = new EnventoryMain();
-            enventoryMain.DisplayData(INVENTORY_JSON);
+            InventoryMain enventoryMain = new InventoryMain();
+            enventoryMain.CRUD(INVENTORY_JSON);
+            //enventoryMain.DisplayData(INVENTORY_JSON);
+            //enventoryMain.UpdateData(INVENTORY_JSON);
+            //enventoryMain.RemoveData(INVENTORY_JSON);
+
         }
     }
 }
